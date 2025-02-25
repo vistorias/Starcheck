@@ -4,31 +4,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Starcheck - Painel de Indicadores</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="shortcut icon" href="favicon.ico">
+
     <style>
+        /* Reset de margens e preenchimentos para evitar espaços extras */
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
 
+        /* Faz com que a página ocupe toda a largura e altura da tela */
         html, body {
             width: 100%;
             height: 100%;
             display: flex;
             justify-content: center;
             align-items: center;
-            background-color: #f4f4f4; /* Cor de fundo para evitar espaços extras */
-            overflow: hidden; /* Remove qualquer rolagem extra */
+            background-color: #f4f4f4; /* Define uma cor de fundo neutra */
+            overflow: hidden; /* Remove barras de rolagem */
         }
 
+        /* Ajusta o iframe para ocupar toda a tela */
         iframe {
-            width: 100vw;  /* Ocupa toda a largura da tela */
-            height: 100vh; /* Ocupa toda a altura da tela */
-            border: none;  /* Remove bordas */
+            width: 100vw;  /* 100% da largura da tela */
+            height: 100vh; /* 100% da altura da tela */
+            border: none;  /* Remove a borda do iframe */
         }
     </style>
 </head>
 <body>
-    <iframe src="https://app.powerbi.com/view?r=eyJrIjoiOWMyYWNiZWEtNDJlZC00YmQzLWI1NDAtYjQ0OTA0ODM0Yzg1IiwidCI6ImRhNjExMjdiLTg4MzItNDFjZi05NzhjLTU5MTg1Yjg0OGI5OCJ9" frameborder="0" allowFullScreen="true"></iframe>
+    <iframe src="https://app.powerbi.com/view?r=eyJrIjoiOWMyYWNiZWEtNDJlZC00YmQzLWI1NDAtYjQ0OTA0ODM0Yzg1IiwidCI6ImRhNjExMjdiLTg4MzItNDFjZi05NzhjLTU5MTg1Yjg0OGI5OCJ9" 
+        frameborder="0" 
+        allowFullScreen="true">
+    </iframe>
 </body>
 </html>
